@@ -92,30 +92,26 @@
     }
 .itinerary {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; /* CENTRADO */
+  gap: 25px; /* espacio entre eventos */
 }
 
-.itinerary-item {
-  flex: 1;
-  min-width: 120px;
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRADO */
+  position: relative;
 }
 
-.itinerary-item .icon {
-  font-size: 2em;
-  margin-bottom: 10px;
+.timeline-icon {
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
-.itinerary-item .time {
-  font-weight: 500;
-}
-
-.itinerary-separator {
-  font-size: 1.5em;
-  align-self: center;
-  color: #6B7A4F;
+.timeline-content {
+  text-align: center; /* hora y evento centrados */
+  margin-left: 0;
 }
 
 
@@ -151,38 +147,39 @@
       <a href="https://maps.app.goo.gl/jPNXWMNG4jdhTaBt5" target="_blank">Ver ubicación en Google Maps</a>
     </p>
 
-    <!-- ITINERARIO -->
-    <h2>Itinerario</h2>
+<h2>Itinerario</h2>
 <div class="box itinerary">
 
-  <div class="itinerary-item">
-    <div class="icon">💍</div>
-    <div class="time">17:30</div>
-    <div>Ceremonia</div>
+  <div class="timeline-item">
+    <div class="timeline-icon">💍</div>
+    <div class="timeline-content">
+      <div class="time">19:15</div>
+      <div>Ceremonia</div>
+    </div>
   </div>
 
-  <div class="itinerary-separator">—</div>
-
-  <div class="itinerary-item">
-    <div class="icon">🍸</div>
-    <div class="time">18:30</div>
-    <div>Cóctel</div>
+  <div class="timeline-item">
+    <div class="timeline-icon">🍸</div>
+    <div class="timeline-content">
+      <div class="time">20:00</div>
+      <div>Cóctel</div>
+    </div>
   </div>
 
-  <div class="itinerary-separator">—</div>
-
-  <div class="itinerary-item">
-    <div class="icon">🍽️</div>
-    <div class="time">20:00</div>
-    <div>Banquete</div>
+  <div class="timeline-item">
+    <div class="timeline-icon">🍽️</div>
+    <div class="timeline-content">
+      <div class="time">22:00</div>
+      <div>Banquete</div>
+    </div>
   </div>
 
-  <div class="itinerary-separator">—</div>
-
-  <div class="itinerary-item">
-    <div class="icon">🕺</div>
-    <div class="time">22:30</div>
-    <div>Fiesta</div>
+  <div class="timeline-item">
+    <div class="timeline-icon">🕺</div>
+    <div class="timeline-content">
+      <div class="time">00:00</div>
+      <div>Fiesta</div>
+    </div>
   </div>
 
 </div>
@@ -215,7 +212,7 @@
 
     <iframe 
 src="https://docs.google.com/forms/d/e/1FAIpQLSdfD6RgwDT194-CJzeYzJIh14jwtevrdKFyFyYDYIyzQYhXCQ/viewform?embedded=true" 
-width="640" 
+width="300" 
 height="567" 
 frameborder="0" 
 marginheight="0" 
@@ -229,7 +226,7 @@ marginwidth="0">Cargando…
     </p>
 
 <iframe 	src="https://docs.google.com/forms/d/e/1FAIpQLSeLiHwS7EQnyGNcJnDqxjOS9RGFdSCQzqOkzToyZW78dc7yug/viewform?embedded=true" 
-width="640" 
+width="300" 
 height="964" 
 frameborder="0" 
 marginheight="0" 
