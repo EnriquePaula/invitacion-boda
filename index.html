@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Boda</title>
+
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      margin: 0;
+      background: #faf8f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+   h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6B7A4F;
+  text-align: center;
+  font-weight: normal;
+}
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      font-size: 1.6em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.05em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    .box {
+      background: #F2F4EE;
+      padding: 30px;
+      margin-top: 25px;
+      border-radius: 12px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .small {
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+.itinerary {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.itinerary-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+.itinerary-item .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.itinerary-item .time {
+  font-weight: 500;
+}
+
+.itinerary-separator {
+  font-size: 1.5em;
+  align-self: center;
+  color: #6B7A4F;
+}
+
+
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="container">
+
+    <!-- MENSAJE INICIAL -->
+    <h1>Enrique & Paula</h1>
+    <p>
+      Con mucha ilusión queremos invitarte a celebrar con nosotros uno de los días
+      más importantes de nuestra vida.
+    </p>
+
+    <!-- FECHA -->
+    <h2>Fecha</h2>
+    <p>
+      Sábado, 11 de julio de 2026<br>
+      19:15 horas
+    </p>
+
+    <!-- UBICACION -->
+    <h2>Ubicación</h2>
+    <p>
+      Hacienda Santa María<br>
+      Palos de la Frontera, España
+    </p>
+    <p>
+      <a href="https://maps.app.goo.gl/jPNXWMNG4jdhTaBt5" target="_blank">Ver ubicación en Google Maps</a>
+    </p>
+
+    <!-- ITINERARIO -->
+    <h2>Itinerario</h2>
+<div class="box itinerary">
+
+  <div class="itinerary-item">
+    <div class="icon">💍</div>
+    <div class="time">17:30</div>
+    <div>Ceremonia</div>
+  </div>
+
+  <div class="itinerary-separator">—</div>
+
+  <div class="itinerary-item">
+    <div class="icon">🍸</div>
+    <div class="time">18:30</div>
+    <div>Cóctel</div>
+  </div>
+
+  <div class="itinerary-separator">—</div>
+
+  <div class="itinerary-item">
+    <div class="icon">🍽️</div>
+    <div class="time">20:00</div>
+    <div>Banquete</div>
+  </div>
+
+  <div class="itinerary-separator">—</div>
+
+  <div class="itinerary-item">
+    <div class="icon">🕺</div>
+    <div class="time">22:30</div>
+    <div>Fiesta</div>
+  </div>
+
+</div>
+
+
+    <!-- CODIGO DE VESTIMENTA -->
+    <h2>Código de vestimenta</h2>
+    <p>
+      Formal<br>
+      (evitar colores claros)
+    </p>
+
+    <!-- ALOJAMIENTOS -->
+    <h2>Alojamientos recomendados</h2>
+    <div class="box">
+      <ul>
+        <li>Hotel La Pinta – a 5 min del evento</li>
+        <li>Hotel La Niña - a 3 min del evento</li>
+        <li>Hostal Los Príncipes - a 4 min del evento</li>
+        <li>Aliocio Rooms - a 4 min del evento</li>
+      </ul>
+    </div>
+
+    <!-- MUSICA -->
+    <h2>Sugerencias de música</h2>
+    <p>
+      Ayúdanos a crear la banda sonora de la fiesta 🎶<br>
+      Déjanos tus canciones favoritas
+    </p>
+
+    <iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLSdfD6RgwDT194-CJzeYzJIh14jwtevrdKFyFyYDYIyzQYhXCQ/viewform?embedded=true" 
+width="640" 
+height="567" 
+frameborder="0" 
+marginheight="0" 
+marginwidth="0">Cargando…
+</iframe>
+
+    <!-- CONFIRMACION -->
+    <h2>Confirmación de asistencia</h2>
+    <p>
+      Por favor, confirma tu asistencia antes del 1 de junio de 2026
+    </p>
+
+<iframe 	src="https://docs.google.com/forms/d/e/1FAIpQLSeLiHwS7EQnyGNcJnDqxjOS9RGFdSCQzqOkzToyZW78dc7yug/viewform?embedded=true" 
+width="640" 
+height="964" 
+frameborder="0" 
+marginheight="0" 
+marginwidth="0">Cargando…
+</iframe>
+
+  </div>
+</body>
+</html>
