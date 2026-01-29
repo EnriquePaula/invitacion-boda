@@ -114,6 +114,29 @@
   margin-left: 0;
 }
 
+.music-icon-below {
+  width: 300px;          /* ajusta el tamaño aquí */
+  display: block;       /* fuerza a ir debajo */
+  margin: 10px auto 0;  /* centrada */
+  opacity: 0.8;
+
+}
+.hero-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: 30% 100%
+  display: block;
+  opacity: 2
+  margin-top: 20px;  
+  background-color: #faf8f6
+}
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .hero-image {
+    height: auto;             /* altura se ajusta proporcionalmente */
+  }
+}
 
   </style>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
@@ -121,9 +144,12 @@
 
 
 <body>
+<img src="portada.png" alt="Nuestra boda" class="hero-image">
+
   <div class="container">
 
     <!-- MENSAJE INICIAL -->
+
     <h1>Enrique & Paula</h1>
     <p>
       Con mucha ilusión queremos invitarte a celebrar con nosotros uno de los días
@@ -196,24 +222,25 @@
     <h2>Alojamientos recomendados</h2>
     <div class="box">
       <ul>
-        <li>Hotel La Pinta – a 5 min del evento</li>
-        <li>Hotel La Niña - a 3 min del evento</li>
-        <li>Hostal Los Príncipes - a 4 min del evento</li>
-        <li>Aliocio Rooms - a 4 min del evento</li>
+        <li>Hotel La Pinta</li>
+        <li>Hotel La Niña</li>
+        <li>Hostal Los Príncipes</li>
+        <li>Aliocio Rooms</li>
       </ul>
     </div>
 
     <!-- MUSICA -->
     <h2>Sugerencias de música</h2>
     <p>
-      Ayúdanos a crear la banda sonora de la fiesta 🎶<br>
+      Ayúdanos a crear la banda sonora de la fiesta<br>
       Déjanos tus canciones favoritas
+      <img src="musica.png" alt="Música" class="music-icon-below">
     </p>
 
     <iframe 
 src="https://docs.google.com/forms/d/e/1FAIpQLSdfD6RgwDT194-CJzeYzJIh14jwtevrdKFyFyYDYIyzQYhXCQ/viewform?embedded=true" 
-width="300" 
-height="567" 
+width="330" 
+height="400" 
 frameborder="0" 
 marginheight="0" 
 marginwidth="0">Cargando…
