@@ -120,6 +120,18 @@
   margin: 10px auto 0;  /* centrada */
   opacity: 0.8;
 }
+.pedida-icon {
+  width: 400px;          /* mismo tamaño que música */
+  display: block;
+  margin: 10px auto 20px;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .pedida-icon {
+    width: 160px;
+  }
+}
+
 .hero-image {
   width: 100%;                 /* ocupa todo el ancho del contenedor */
   height: 290px;               /* ajusta la altura como quieras */
@@ -136,7 +148,15 @@
   }
 }
 
-
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  font-style: italic;
+  color: #8A9B6E;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
   </style>
 </head>
@@ -147,12 +167,18 @@
   <div class="container">
 
     <!-- MENSAJE INICIAL -->
-    <h1>Enrique & Paula</h1>
-    <p>
-      Con mucha ilusión queremos invitarte a celebrar con nosotros uno de los días
-      más importantes de nuestra vida.
-    </p>
+   <h1>Enrique & Paula</h1>
 
+
+<p class="subtitle">¡Nos casamos!</p>
+
+<img src="Imagenes/pedida.png" alt="Pedida" class="pedida-icon">
+
+<p>
+  Con mucha ilusión queremos invitarte a celebrar con nosotros uno de los días
+  más importantes de nuestra vida:
+  NUESTRA BODA
+</p>
     <!-- FECHA -->
     <h2>Fecha</h2>
     <p>
