@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra Boda</title>
 
   <style>
-    body {
-      font-family: 'Lora', serif;
+   body {
+  font-family: 'Lora', serif;
       margin: 0;
       background: #faf8f6;
       color: #333;
@@ -20,12 +21,12 @@
       padding: 40px 20px;
     }
 
-   h1, h2 {
-  font-family: 'Playfair Display', serif;
-  color: #6B7A4F;
-  text-align: center;
-  font-weight: normal;
-}
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-weight: normal;
+      color: #6B7A4F;
+    }
 
     h1 {
       font-size: 2.5em;
@@ -57,7 +58,7 @@
     .box {
       background: #F2F4EE;
       padding: 30px;
-      margin-top: 25px;
+      margin-top: 10px;
       border-radius: 12px;
     }
 
@@ -100,7 +101,7 @@
 .timeline-item {
   display: flex;
   flex-direction: column;
-  align-items: center; /* CENTRADO */
+  align-items: center;
   position: relative;
 }
 
@@ -113,23 +114,20 @@
   text-align: center; /* hora y evento centrados */
   margin-left: 0;
 }
-
 .music-icon-below {
-  width: 300px;          /* ajusta el tamaño aquí */
+  width: 200px;          /* ajusta el tamaño aquí */
   display: block;       /* fuerza a ir debajo */
   margin: 10px auto 0;  /* centrada */
   opacity: 0.8;
-
 }
 .hero-image {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: 30% 100%
+  width: 100%;                 /* ocupa todo el ancho del contenedor */
+  height: 290px;               /* ajusta la altura como quieras */
+  object-fit: cover;        /* llena el contenedor */
+  object-position: 50% 40%;     
   display: block;
-  opacity: 2
-  margin-top: 20px;  
-  background-color: #faf8f6
+  margin-top: 10px;         /* mini espacio arriba */
+  background-color: #faf8f6;
 }
 /* Ajuste para móviles */
 @media (max-width: 768px) {
@@ -138,18 +136,17 @@
   }
 }
 
+
+
   </style>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-<img src="portada.png" alt="Nuestra boda" class="hero-image">
+<img src="Imagenes/portada.png" alt="Nuestra boda" class="hero-image">
 
   <div class="container">
 
     <!-- MENSAJE INICIAL -->
-
     <h1>Enrique & Paula</h1>
     <p>
       Con mucha ilusión queremos invitarte a celebrar con nosotros uno de los días
@@ -173,6 +170,7 @@
       <a href="https://maps.app.goo.gl/jPNXWMNG4jdhTaBt5" target="_blank">Ver ubicación en Google Maps</a>
     </p>
 
+    <!-- ITINERARIO -->
 <h2>Itinerario</h2>
 <div class="box itinerary">
 
@@ -232,32 +230,35 @@
     <!-- MUSICA -->
     <h2>Sugerencias de música</h2>
     <p>
-      Ayúdanos a crear la banda sonora de la fiesta<br>
+      Ayúdanos a crear la banda sonora de la fiesta <br>
       Déjanos tus canciones favoritas
-      <img src="musica.png" alt="Música" class="music-icon-below">
     </p>
+<img src="Imagenes/musica.png" alt="Música" class="music-icon-below"><br>
 
+<div style="display:flex; justify-content:center; align-items:center;">
     <iframe 
 src="https://docs.google.com/forms/d/e/1FAIpQLSdfD6RgwDT194-CJzeYzJIh14jwtevrdKFyFyYDYIyzQYhXCQ/viewform?embedded=true" 
-width="330" 
+width="300" 
 height="400" 
 frameborder="0" 
 marginheight="0" 
-marginwidth="0">Cargando…
+marginwidth="0">
+Cargando…
 </iframe>
-
+</div>
     <!-- CONFIRMACION -->
     <h2>Confirmación de asistencia</h2>
     <p>
       Por favor, confirma tu asistencia antes del 1 de junio de 2026
     </p>
-
+<div style="display:flex; justify-content:center; align-items:center;">
 <iframe 	src="https://docs.google.com/forms/d/e/1FAIpQLSeLiHwS7EQnyGNcJnDqxjOS9RGFdSCQzqOkzToyZW78dc7yug/viewform?embedded=true" 
 width="300" 
-height="964" 
+height="500" 
 frameborder="0" 
 marginheight="0" 
-marginwidth="0">Cargando…
+marginwidth="0">
+Cargando…
 </iframe>
 
   </div>
