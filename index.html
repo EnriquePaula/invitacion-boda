@@ -55,8 +55,9 @@
   margin-bottom: 0;
   text-align: center;
 }
-/* .decorative-line {width: 80px; height: 1px;background-color: #C9D2B8; opacity: 0.7;margin: 12px auto 16px;   /* auto = centrado real */} */
 
+
+/* IMAGEN FIN */
 .hero-image {
   width: 100%;                 /* ocupa todo el ancho del contenedor */
   height: 290px;               /* ajusta la altura como quieras */
@@ -87,7 +88,7 @@
 
     .box {
       background: #F2F4EE;
-      padding: 30px;
+      padding: 10px;
       margin-top: 10px;
       border-radius: 12px;
     }
@@ -164,6 +165,18 @@
   opacity: 0.8;
 }
 
+.sitio-icon {
+  width: 400px;          /* mismo tamaño que música */
+  display: block;
+  margin: 10px auto 20px;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .sitio-icon {
+    width: 300px;
+  }
+}
+
 
   </style>
 </head>
@@ -199,6 +212,8 @@
     <p>
       Hacienda Santa María<br>
       Palos de la Frontera, España
+<img src="Imagenes/sitio.png" alt="Sitio" class="sitio-icon">
+
     </p>
     <p>
       <a href="https://maps.app.goo.gl/jPNXWMNG4jdhTaBt5" target="_blank">Ver ubicación en Google Maps</a>
@@ -247,19 +262,40 @@
     <h2>Código de vestimenta</h2>
     <p>
       Formal<br>
-      (evitar colores claros)
-    </p>
+     <span style="font-size: 0.8em;"> (Traje y corbata / Vestido largo)</span>
+         </p>
 
-    <!-- ALOJAMIENTOS -->
-    <h2>Alojamientos recomendados</h2>
-    <div class="box">
-      <ul>
-        <li>Hotel La Pinta</li>
-        <li>Hotel La Niña</li>
-        <li>Hostal Los Príncipes</li>
-        <li>Aliocio Rooms</li>
-      </ul>
-    </div>
+<!-- ALOJAMIENTOS -->
+<h2>Alojamientos recomendados</h2>
+<div class="box">
+  <ul>
+    <li>
+      Hotel La Pinta
+      <a href="https://maps.app.goo.gl/PGa7oXioqQudKVn38" target="_blank">
+        📍
+      </a>
+    </li>
+    <li>
+      Hostal La Niña
+      <a href="https://maps.app.goo.gl/XKPtZnRRZqUB1sgeA" target="_blank">
+        📍
+      </a>
+    </li>
+    <li>
+      Hostal Los Príncipes
+      <a href="https://maps.app.goo.gl/6B3C3muxGgTYaCR96" target="_blank">
+        📍
+      </a>
+    </li>
+    <li>
+      Aliocio Rooms
+      <a href="https://maps.app.goo.gl/e7SJpp3DBB4EyRK27" target="_blank">
+        📍
+      </a>
+    </li>
+  </ul>
+</div>
+
 
     <!-- MUSICA -->
     <h2>Sugerencias de música</h2>
