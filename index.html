@@ -29,12 +29,13 @@
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.6em;
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
 
     h2 {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 1.6em;
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
@@ -42,9 +43,41 @@
 
     p {
       text-align: center;
+      line-height: 1.7;
       font-size: 1.05em;
     }
-
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em;
+  font-style: italic;
+  color: #9AAC86; /* #8A9B6E #7F8F6A oliva #9AAC86 salvia #6F8A5E bosque */
+  margin-top: 2px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.decorative-line {
+  width: 80px;
+  height: 1px;
+  background-color: #C9D2B8;
+  opacity: 0.7;
+  margin: 12px auto 16px;   /* auto = centrado real */
+}
+.hero-image {
+  width: 100%;                 /* ocupa todo el ancho del contenedor */
+  height: 290px;               /* ajusta la altura como quieras */
+  object-fit: cover;        /* llena el contenedor */
+  object-position: 50% 40%;     
+  display: block;
+  margin-top: 10px;         /* mini espacio arriba */
+  margin-bottom: 0;      /*mini espacio abajo */
+  background-color: #faf8f6;
+}
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .hero-image {
+    height: auto;             /* altura se ajusta proporcionalmente */
+  }
+}
     ul {
       list-style: none;
       padding: 0;
@@ -91,6 +124,19 @@
       text-align: center;
       margin-top: 10px;
     }
+
+.pedida-icon {
+  width: 400px;          /* mismo tamaño que música */
+  display: block;
+  margin: 10px auto 20px;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .pedida-icon {
+    width: 160px;
+  }
+}
+
 .itinerary {
   display: flex;
   flex-direction: column;
@@ -120,43 +166,7 @@
   margin: 10px auto 0;  /* centrada */
   opacity: 0.8;
 }
-.pedida-icon {
-  width: 400px;          /* mismo tamaño que música */
-  display: block;
-  margin: 10px auto 20px;
-  opacity: 0.8;
-}
-@media (max-width: 768px) {
-  .pedida-icon {
-    width: 160px;
-  }
-}
 
-.hero-image {
-  width: 100%;                 /* ocupa todo el ancho del contenedor */
-  height: 290px;               /* ajusta la altura como quieras */
-  object-fit: cover;        /* llena el contenedor */
-  object-position: 50% 40%;     
-  display: block;
-  margin-top: 10px;         /* mini espacio arriba */
-  background-color: #faf8f6;
-}
-/* Ajuste para móviles */
-@media (max-width: 768px) {
-  .hero-image {
-    height: auto;             /* altura se ajusta proporcionalmente */
-  }
-}
-
-.subtitle {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8em;
-  font-style: italic;
-  color: #8A9B6E;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
 
   </style>
 </head>
@@ -169,8 +179,10 @@
     <!-- MENSAJE INICIAL -->
    <h1>Enrique & Paula</h1>
 
+<div class="decorative-line"></div>
 
 <p class="subtitle">¡Nos casamos!</p>
+
 
 <img src="Imagenes/pedida.png" alt="Pedida" class="pedida-icon">
 
