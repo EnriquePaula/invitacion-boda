@@ -147,11 +147,11 @@
   position: relative;
 }
 
-/* Línea vertical centrada */
+/* Línea vertical */
 .itinerary::before {
   content: "";
   position: absolute;
-  left: 45%;
+  left: 50%;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -160,20 +160,17 @@
 }
 
 .timeline-item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   position: relative;
-
-  /* desplaza todo el bloque al centro */
-  width: 70%;
-  margin: 0 auto 40px auto;
+  width: 100%;
+  margin-bottom: 40px;
+  min-height: 60px;
 }
 
 /* Posicion Icono */
 .timeline-icon {
   position: absolute;
-  left: 170px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   border: 2px solid #7a8450;
   width: 36px;
@@ -184,38 +181,25 @@
   justify-content: center;
 }
 
-.timeline-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: #4b2e5e;
-  stroke-width: 1.5;
-  fill: none;
-}
 /* Posicion Texto */
 .timeline-content {
-  padding-left: 220px; /* espacio para el icono */
+  padding-left: 55%;
 }
 
 /* Posición Icono y Texto en móvil */
 @media (max-width: 768px) {
 
-  .timeline-item {
-    width: 100%;
-    margin: 0 0 40px 0;
-  }
-
   .itinerary::before {
-    left: 42%;   /* mueve la línea a la izquierda */
+    left: 35%;
   }
 
   .timeline-icon {
-    left: 60px;   /* icono alineado con la línea */
+    left: 35%;
   }
 
   .timeline-content {
-    padding-left: 70px; /* texto justo a la derecha del icono */
+    padding-left: 50%;
   }
-
 }
 
 .timeline-content .time {
