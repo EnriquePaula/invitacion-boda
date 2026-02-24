@@ -174,7 +174,7 @@
 /* Posicion Icono */
 .timeline-icon {
   position: absolute;
-  left: 100px;
+  left: 170px;
   background: white;
   border: 2px solid #7a8450;
   width: 36px;
@@ -194,7 +194,29 @@
 }
 /* Posicion Texto */
 .timeline-content {
-  padding-left: 150px; /* espacio para el icono */
+  padding-left: 220px; /* espacio para el icono */
+}
+
+/* Posición Icono y Texto en móvil */
+@media (max-width: 768px) {
+
+  .timeline-item {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+
+  .itinerary::before {
+    left: 20px;   /* mueve la línea a la izquierda */
+  }
+
+  .timeline-icon {
+    left: 20px;   /* icono alineado con la línea */
+  }
+
+  .timeline-content {
+    padding-left: 70px; /* texto justo a la derecha del icono */
+  }
+
 }
 
 .timeline-content .time {
@@ -221,7 +243,7 @@
   .music-icon-below {
     width: 300px;
   }
-
+}
 .sitio-icon {
   width: 400px;          /* mismo tamaño que música */
   display: block;
